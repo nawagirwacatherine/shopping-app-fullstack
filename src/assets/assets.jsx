@@ -4,7 +4,7 @@ import kid1 from './kid1.jpg'
 import kid2 from './kid2.jpg'
 import kid3 from './kid3.jpg'
 import kid4 from './kid4.jpg'
-import kid5 from './kid5.jpg'
+import product3 from './product3.jpg'
 import lady1 from './lady1.jpg'
 import lady2 from './lady2.jpg'
 import lady3 from './lady3.jpg'
@@ -17,6 +17,7 @@ import men4 from './men4.jpg'
 
 export const assets = {
     Homepage,
+    product3,
     kid1,
     lady1,
     men1
@@ -24,8 +25,8 @@ export const assets = {
 
 export const products = [
     {
-    _id:"aaaa",
-    name:"men Round Neck Cotton Top",
+    id:"aaaa",
+    name:"Men's Round Neck Cotton Top",
     description: "A lightweight, usually knitted, pullover shirt, close-fitting and with long sleeves",
     price:100,
     image: [men3],
@@ -37,13 +38,13 @@ export const products = [
 },
 
   {
-    _id:"aaab",
-    name:"Men Round Neck Pure Cotton T-shirt",
-    description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    id:"aaab",
+    name:"Men's Trouser Pure Cotton Pants",
+    description: "A lightweight, usually knitted, pullover pant, close-fitting and with",
+    price:150,
     image: [men2],
     category:"Men",
-    subCategory: "TopWear",
+    subCategory: "Casual Wear",
     sizes:["M","L","XL"],
     date:1723891448,
     bestseller:true
@@ -51,10 +52,10 @@ export const products = [
 
 
   {
-    _id:"aaab",
-    name:"Men Round Neck Pure Cotton T-shirt",
+    id:"aaab",
+    name:"Men's Round Neck Pure Cotton T-shirt",
     description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    price:250,
     image: [men1,men2,men4],
     category:"Men",
     subCategory: "TopWear",
@@ -65,10 +66,10 @@ export const products = [
 
 
   {
-    _id:"aaab",
-    name:"kid Round Neck Pure Cotton T-shirt",
+    id:"aaab",
+    name:"kid's Round Neck Pure Cotton baby wear",
     description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    price:300,
     image: [kid1],
     category:"kid",
     subCategory: "TopWear",
@@ -78,23 +79,23 @@ export const products = [
 },
 
   {
-    _id:"aadb",
-    name:"kid Round Neck Pure Cotton T-shirt",
-    description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    id:"aadb",
+    name:"kid's Round vest Pure Cotton T-shirt",
+    description: "A lightweight, usually knitted, vest, close-fitting and with",
+    price:20,
     image: [kid2],
     category:"kid",
     subCategory: "TopWear",
     sizes:["M","L","XL"],
     date:1723891448,
-    bestseller:true
+    bestseller:false
 },
 
   {
-    _id:"abab",
-    name:"kids Round Neck Pure Cotton T-shirt",
-    description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    id:"abab",
+    name:"kid's Round silk dress",
+    description: "A lightweight, usually knitted, dress, close-fitting and with 10 differnt colors",
+    price:150,
     image: [kid3],
     category:"kids",
     subCategory: "TopWear",
@@ -104,33 +105,33 @@ export const products = [
 },
 
   {
-    _id:"baab",
-    name:"kid Round Neck Pure Cotton T-shirt",
+    id:"baab",
+    name:"kid's Round Neck Pure Cotton T-shirt and Leather-Skirt",
     description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    price:140,
     image: [kid4],
-    category:"aged",
+    category:"kids",
     subCategory: "TopWear",
     sizes:["M","L","XL"],
     date:1723891448,
     bestseller:true
 },
   {
-    _id:"aaab",
-    name:"lady Round Neck Pure Cotton T-shirt",
+    id:"aaab",
+    name:"lady's free Pure linen dress",
     description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    price:220,
     image: [lady1],
     category:"lady",
-    subCategory: "TopWear",
+    subCategory: "FullWear",
     sizes:["M","L","XL"],
     date:1723891448,
-    bestseller:true
+    bestseller:false
 },
   {
-    _id:"aaab",
-    name:"lady Round Neck Pure Cotton T-shirt",
-    description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
+    id:"aaab",
+    name:"lady's Round Neck Pure Cotton Shirt-dress",
+    description: "A lightweight, usually knitted, pullover shirt-dress, close-fitting and with",
     price:200,
     image: [lady2],
     category:"lady",
@@ -140,10 +141,10 @@ export const products = [
     bestseller:true
 },
   {
-    _id:"aaab",
-    name:"lady Round Neck Pure Cotton T-shirt",
-    description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
-    price:200,
+    id:"aaab",
+    name:"lady's Pure Cotton Free-dress",
+    description: "A lightweight, usually knitted, open dress, close-fitting and with",
+    price:230,
     image: [lady3],
     category:"lady",
     subCategory: "TopWear",
@@ -152,8 +153,8 @@ export const products = [
     bestseller:true
 },
   {
-    _id:"aaab",
-    name:"Men Round Neck Pure Cotton T-shirt",
+    id:"aaab",
+    name:"Men's Round Neck Pure Cotton T-shirt",
     description: "A lightweight, usually knitted, pullover shirt, close-fitting and with",
     price:200,
     image: [men1],
@@ -161,7 +162,7 @@ export const products = [
     subCategory: "TopWear",
     sizes:["M","L","XL"],
     date:1723891448,
-    bestseller:true
+    bestseller:false
 },
 
 ]

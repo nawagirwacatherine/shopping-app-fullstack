@@ -75,7 +75,7 @@ export const products = [
     name:"Men's Trouser Pure Cotton Pants",
     description: "A lightweight, usually knitted, pullover pant, close-fitting and with",
     price:150,
-    image: [men2],
+    image: [men2,men2,men3,men4,men5],
     category:"Men",
     subCategory: "Casual Wear",
     sizes:["M","L","XL"],

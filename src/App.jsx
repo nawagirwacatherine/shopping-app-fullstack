@@ -19,16 +19,17 @@ const App = () => {
 
   const [token, setToken] = useState(localStorage.getItem('token')?localStorage.getItem('token'):'');
 
-  useEffect(() =>{
-    localStorage.setItem('token',token)
-
-  },[token])
+ useEffect(() => {
+  if (token) {
+    localStorage.setItem('token', token);
+  }
+}, [token]);
   return (
     <div className='bg-gray-50 min-h-screen'>
       <ToastContainer/>
 
       {
-        token === "" 
+        !token ===""
         ? <Login setToken={setToken}/>
         :
       

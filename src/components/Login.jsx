@@ -12,27 +12,29 @@ const Login = ({setToken}) => {
     const [password,setPassword] = useState('')
     
 
-    const onSubmitHandler = async (e) => {
-        e.preventDefault();
-        try {
-            console.log("Backend URL:", backendUrl);
-           const response = await axios.post(backendUrl + '/api/user/admin', { email, password });
-            console.log("Login response:", response.data);
-         if (response.data.success){
-             console.log("Setting token:", response.data.token);
-            setToken(response.data.token)
-         } 
+const onSubmitHandler = async (e) => {
+    e.preventDefault();
+    try {
+        const response = await axios.post(
+            backendUrl + '/api/user/admin',
+            { email, password }
+        );
 
-         else {
-            toast.error(response.data.message)
+        if (response.data.success) {
 
-         }
-        } catch (error) {
-            console.log("Login error:", error);
-            toast.error(error.message)
-            
+        
+            localStorage.setItem("token", response.data.token);
+            setToken(response.data.token);
+
+        } else {
+            toast.error(response.data.message);
         }
+
+    } catch (error) {
+        toast.error(error.message);
     }
+};
+
   return (
     <div className='min-h-screen flex items-center justify-center w-full'>
         <div className='bg-white shadow-md rounded-lg px-8 py-6 max-w-md'>
